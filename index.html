@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">Stalin Kombat</div>
+    <main>
+        <div class="tap-list">
+            <div class="tap-coin">
+                <div class="tap">Прибыль за тап:</div>
+                <div class="image-coin2">
+                    <img id="image-coins" src="./assets/image/coin.png" alt=""> <span id="current-add-one">+1</span>
+                </div>
+            </div>
+        </div>
+        <div class="Score-coin">
+            <div class="score-dollar">
+                <div class="Score" id="score">0 </div><img src="./assets/image/coin3.png" alt="">
+            </div>
+        </div>
+        <div class="container-circle">
+            <div class="Сircle">
+                <img id='circle' src="./assets/image/Token-Stalin.png" alt="">
+            </div>
+        </div>
+        <div class="Boost-button">
+            <img src="./assets/image/Serp.png" alt="">
+            <div class="button-text" onclick="toggleDropdown()">Boost</div>
+        </div>
+        <div class="container">
+            <div id="myDropdown" class="dropdown-content">
+                <button id="boost-button">Multitap<br><img src="./assets/image/coin2.png" alt=""> 100</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>

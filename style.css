@@ -1,0 +1,227 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    max-width: 720px;
+    height: 10vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main{
+    height: 90vh;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1c1f24;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px -10px 18px 0px rgb(230, 7, 7);
+}
+
+.title{
+    color: white;
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    width: max-content;
+    margin: 0 auto;
+    height: 10vh;
+}
+
+.Сircle img{
+    margin-top: 50px;
+    transition: transform 0.2s ease;
+    --tiltX: 0deg;
+    --tiltY: 0deg;
+    transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
+}
+
+.container-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Score-coin{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    line-height: 42px;
+    padding-top: 40px;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Boost-button{
+    user-select: none;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+
+.Boost-button img{
+    width: 36px;
+    height: 36px;
+}
+
+.image-coin img{
+    width: 50px;
+    height: 50px;
+}
+
+.coming-soon{
+    color: white;
+    font-size: 36px;
+    background-color: #424242;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    user-select: none;
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.com{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#image-coins{
+    width: 14px;
+    height: 14px;
+}
+
+.tap{
+    color: white;
+    font-size: 14px;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image-coin2{
+    color: white;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    font-size: 14px;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tap-coin{
+    background-color: #424242;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 113px;
+}
+
+.tap-coin1{
+    background-color: #424242;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    width: 113px;
+}
+
+.tap-list{
+    display: flex;
+    padding-top: 10px;
+}
+
+.plus-one{
+    position: absolute;
+    color: white;
+    animation: move-up 2s forwards;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px
+}
+
+@keyframes move-up{
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.show {display:block;}
+
+.score-dollar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.score-dollar img{
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #1c1f24;
+    border-top: 2px solid rgb(82 82 82);
+    height: 85px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 25px 25px 0 0;
+}
+
+.dropdown-content.show {
+    display: block; /* Show the dropdown when the 'show' class is added */
+}
+
+#boost-button{
+    position: absolute;
+    background-color: white;
+    border: 1px solid #2d2c2c;
+    width: 90%;
+    left: 5%;
+    border-radius: 15px;
+    cursor: pointer;
+    top: 17px;
+    height: 50px;
+}
+
+image-coin
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Hide the content for non-mobile devices */
+@media (min-width: 768px) {
+    body {
+        display: none; /* Hide the entire body for devices wider than 768px */
+    }
+    .mobile-warning {
+        display: block; /* Show a warning message */
+    }
+}
+
+/* Show the content for mobile devices */
+@media (max-width: 767px) {
+    .mobile-warning {
+        display: none; /* Hide the warning message on mobile */
+    }
+}
